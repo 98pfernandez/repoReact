@@ -1,4 +1,7 @@
-const navBar = () => {
+import CartWidget from "./CartWidget" 
+import '../App.css';
+
+const navBar = (numeroItems) => {
     return(
         <header>
         <h1 id="titulo"><a href="./index.html">DESARROLLO DE SOLUCIONES INFORMÁTICAS</a></h1>
@@ -7,7 +10,7 @@ const navBar = () => {
           <div>
             <ul className="centerItems">
               <a href="./index.html">
-                <li className="itemList">HOME</li>
+                <li className="itemList">INICIO</li>
               </a>
               <a href="./pages/projects.html">
                 <li className="itemList">CATÁLOGO</li>
@@ -18,6 +21,10 @@ const navBar = () => {
               <a href="./pages/form.html">
                 <li className="itemList">FORMULARIO DE CONTACTO</li>
               </a>
+
+              <li>
+              {CartWidget(numeroItems)}
+             </li>
 
             </ul>
           </div>
