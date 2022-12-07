@@ -1,16 +1,16 @@
 
 const resetCartQty = () =>{
-  localStorage.removeItem("cantidadItemCarrito");
+  localStorage.removeItem("cartQty");
   const qtyCart = document.getElementById('contadorCarrito');
   qtyCart.innerText=0;
 }
 
-function Cart() {
+function Cart({increaseCartQuantity}) {
   
   return (
     <div className="cart">
     <img src="https://thumbs.gfycat.com/AlertAdventurousAngwantibo-max-1mb.gif" height={"600px"} width={"600px"} alt="" />
-    <button onClick={() =>resetCartQty()}>restart cart quantity</button>
+    <button onClick={increaseCartQuantity}>restart cart quantity</button>
     </div>
     );
 }
