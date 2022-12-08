@@ -160,6 +160,7 @@ ul {
   
 }
 
+
 .card{
   border-radius: 10px;
     border: 35px solid;
@@ -202,7 +203,6 @@ ul {
   height: 15rem;
   justify-content: center;
   margin-bottom: 2%;
-  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .cardDescription{
