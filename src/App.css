@@ -324,3 +324,27 @@ textarea{
   flex-direction: row;
   justify-content: center;
 }
+
+.dropDown{
+  font-size: 1.5rem;
+  border-radius: 10%;
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1%;
+  background-color: rgba(0, 0, 0, 0.051);
+  color: white;
+}
+
+option{
+  color: white;
+  background-color: rgb(40, 40, 40);
+}
+
+
+.products{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
